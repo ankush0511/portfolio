@@ -542,20 +542,47 @@ opacity: 0;
 .contact-form form{
     position: relative;
 }
-.contact-form form input,form textarea{
+.contact-form form input, textarea {
     border: none;
     outline: none;
-    width: 90%;
+    width: 60%;
     padding: 10px;
     background: #fff;
     font-size: 1rem;
-    font-weight: 600;
+    font-style: italic;
+    font-weight: thin;
     margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
+    transition: all 0.5s ease; 
 }
 .contact-form textarea{
+    text-align: left;
+}
+
+/* Animation keyframes */
+@keyframes focusAnimation {
+    0% {
+        border-color: #ddd;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        transform: scale(1);
+    }
+    100% {
+        border-color: #007BFF;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+        transform: scale(1.02);
+    }
+}
+
+/* Hover effect */
+.contact-form input:hover {
+    animation: focusAnimation 0.5s ease-in-out; /* Apply smoother animation on hover */
+    text-align: center;
+}
+
+/* Specific textarea styles */
+.contact-form textarea {
     resize: none;
-    height: 220px;
+    height: 90px;
 }
 .contact-form form .send{
     margin-top: 15px;
