@@ -29,7 +29,6 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
-  cursor: default;
   opacity: 0;
   animation: slideRight 1s ease forwards;
 }
@@ -416,7 +415,6 @@ section {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  cursor: pointer;
   padding: 10px;
 }
 .row img {
@@ -737,7 +735,6 @@ textarea {
     position: absolute;
     top: 25px;
     right: 25px;
-    cursor: pointer;
   }
   .services-list {
     padding: 30px;
