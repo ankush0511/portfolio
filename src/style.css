@@ -61,7 +61,7 @@ body {
   justify-content: space-between;
 
   height: 100vh;
-  background: url(../public/Ankush_cover.jpeg) no-repeat;
+  background: url(../public/ankushcover.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -343,6 +343,12 @@ section {
 .progress-line.react span {
   width: 80%;
 }
+.progress-line.DL span {
+  width: 90%;
+}
+.progress-line.mlops span {
+  width: 40%;
+}
 .progress-line span::after {
   position: absolute;
   padding: 1px 8px;
@@ -372,6 +378,12 @@ section {
 }
 .progress-line.react span::after {
   content: "80% TREE";
+}
+.progress-line.DL span::after {
+  content: "90%";
+}
+.progress-line.mlops span::after {
+  content: "40%";
 }
 .progress-line span::before {
   content: "";
@@ -663,7 +675,7 @@ textarea {
   }
 }
 
-.navbar .fas {
+.navbar.fas {
   display: none;
 }
 
@@ -672,8 +684,9 @@ textarea {
     overflow-x: hidden;
   }
   .home {
+    height:110wh;
     width: 100vw;
-    background-image: url(../public/ankush_small.jpeg);
+    background-image: url(../public/ankushsmall.jpg);
     background-size: cover;
   }
   .home-cont {
