@@ -686,7 +686,7 @@ textarea {
   .home {
     height:110wh;
     width: 100vw;
-    background-image: url(../public/ankushsmall.jpg);
+    background-image: url(../public/ankushsmall.png);
     background-size: cover;
   }
   .home-cont {
